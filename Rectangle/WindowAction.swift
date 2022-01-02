@@ -98,7 +98,7 @@ enum WindowAction: Int {
     // Determines where separators should be used in the menu
     var firstInGroup: Bool {
         switch self {
-        case .leftHalf, .topLeft, .firstThird, .maximize, .nextDisplay, .moveLeft, .firstFourth, .topLeftSixth:
+        case .leftHalf, .topLeft, .firstThird, .maximize, .nextDisplay, .moveLeft, .firstFourth, .topLeftSixth, .topLeftNinth:
             return true
         default:
             return false
@@ -282,8 +282,33 @@ enum WindowAction: Int {
         case .bottomRightSixth:
             key = "m2F-eA-g7w.title"
             value = "Bottom Right Sixth"
-        case .topLeftNinth, .topCenterNinth, .topRightNinth, .middleLeftNinth, .middleCenterNinth, .middleRightNinth, .bottomLeftNinth, .bottomCenterNinth, .bottomRightNinth:
-            return nil
+        case .topLeftNinth:
+            key = "smt-L1-2Lu.title"
+            value = "Top Left Ninth"
+        case .topCenterNinth:
+            key = "e7r-aF-cYf.title"
+            value = "Top Center Ninth"
+        case .topRightNinth:
+            key = "PzI-wR-Ea9.title"
+            value = "Top Right Ninth"
+        case .middleLeftNinth:
+            key = "zvO-BQ-jcl.title"
+            value = "Middle Left Ninth"
+        case .middleCenterNinth:
+            key = "0MV-fF-bfu.title"
+            value = "Middle Center Ninth"
+        case .middleRightNinth:
+            key = "UN6-hC-Glx.title"
+            value = "Middle Right Ninth"
+        case .bottomLeftNinth:
+            key = "duk-my-yFz.title"
+            value = "Bottom Left Ninth"
+        case .bottomCenterNinth:
+            key = "CwT-gF-3A6.title"
+            value = "Bottom Center Ninth"
+        case .bottomRightNinth:
+            key = "gko-aS-Lr9.title"
+            value = "Bottom Right Ninth"
         case .specified, .reverseAll:
             return nil
         }
@@ -455,6 +480,7 @@ enum WindowAction: Int {
         switch self {
         case .firstFourth, .secondFourth, .thirdFourth, .lastFourth, .firstThreeFourths, .lastThreeFourths: return .fourths
         case .topLeftSixth, .topCenterSixth, .topRightSixth, .bottomLeftSixth, .bottomCenterSixth, .bottomRightSixth: return .sixths
+        case .topLeftNinth, .topCenterNinth, .topRightNinth, .middleLeftNinth, .middleCenterNinth, .middleRightNinth, .bottomLeftNinth, .bottomCenterNinth, .bottomRightNinth: return .ninths
         case .moveUp, .moveDown, .moveLeft, .moveRight: return .move
         default: return nil
         }

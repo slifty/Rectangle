@@ -62,6 +62,16 @@ class PrefsViewController: NSViewController {
     @IBOutlet weak var bottomLeftSixthShortcutView: MASShortcutView!
     @IBOutlet weak var bottomCenterSixthShortcutView: MASShortcutView!
     @IBOutlet weak var bottomRightSixthShortcutView: MASShortcutView!
+    
+    @IBOutlet weak var topLeftNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var topCenterNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var topRightNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var middleLeftNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var middleCenterNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var middleRightNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var bottomLeftNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var bottomCenterNinthShortcutView: MASShortcutView!
+    @IBOutlet weak var bottomRightNinthShortcutView: MASShortcutView!
 
     
     @IBOutlet weak var showMoreButton: NSButton!
@@ -109,7 +119,16 @@ class PrefsViewController: NSViewController {
             .topRightSixth: topRightSixthShortcutView,
             .bottomLeftSixth: bottomLeftSixthShortcutView,
             .bottomCenterSixth: bottomCenterSixthShortcutView,
-            .bottomRightSixth: bottomRightSixthShortcutView
+            .bottomRightSixth: bottomRightSixthShortcutView,
+            .topLeftNinth: topLeftNinthShortcutView,
+            .topCenterNinth: topCenterNinthShortcutView,
+            .topRightNinth: topRightNinthShortcutView,
+            .middleLeftNinth: middleLeftNinthShortcutView,
+            .middleCenterNinth: middleCenterNinthShortcutView,
+            .middleRightNinth: middleRightNinthShortcutView,
+            .bottomLeftNinth: bottomLeftNinthShortcutView,
+            .bottomCenterNinth: bottomCenterNinthShortcutView,
+            .bottomRightNinth: bottomRightNinthShortcutView
         ]
         
         for (action, view) in actionsToViews {
